@@ -1,1 +1,100 @@
+:root {
+    /*Colors*/
+    --main-color: #036800;
+    /*Paddings*/
+    --small-padding: 0.5em;
+    --medium-padding: calc(var(--small-padding) * 2);
+    --large-padding: calc(var(--small-padding) * 3);
+    --xl-padding: calc(var(--small-padding) * 4);
+}
+/*-------body------*/
+body {
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+/*----Header-----*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - var(--xl-padding));
+    height: 4em;
+    padding: var(--small-padding) var(--medium-padding);
+}
+.header-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+#web-search {
+    display: none;
+}
+#mobile-navigation {
+    position: relative;
+}
+#dropdown {
+    display: none;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--main-color);
+}
+ul {
+    padding-inline-start: 0;
+  }
+.menu li {
+    list-style-type: none;
+    padding: var(--small-padding) var(--large-padding);
+}
+.menu li:hover {
+    background: #fff;
+}
+.menu li:hover a {
+    color: var(--main-color);
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.active {
+    display: block;
+}
 
+/* -----Main------ */
+.about { grid-area: about;}
+.explore { grid-area: explore;}
+.kids--image { grid-area: kids-image;}
+.kids--text { grid-area: kids-text;}
+.teachers--image { grid-area: teachers-image;}
+.teachers--text { grid-area: teachers-text;}
+.researchers--image { grid-area: researchers-image;}
+.researchers--text { grid-area: researchers-text;}
+.exhibitions--spaces { grid-area: exhibitions-spaces;}
+.special--events { grid-area: special-events;}
+.getinvolved--image { grid-area: getinvolved-image;}
+.getinvolved--text { grid-area: getinvolved-text;}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "about"
+        "explore"
+        "kids-image"
+        "kids-text"
+        "teachers-image"
+        "teachers-text"
+        "researchers-image"
+        "researchers-text"
+        "exhibitions-spaces"
+        "special-events"
+        "getinvolved-image"
+        "getinvolved-text";
+    margin:0 auto;
+    width: min(1000px, calc(100vw - var(--large-padding)));
+}
+
+/*-----Footer --------*/
