@@ -12,6 +12,7 @@ body {
     margin:0;
     padding: 0;
     width:100%;
+    font: ;
 }
 /*----Header-----*/
 header {
@@ -22,6 +23,10 @@ header {
     width: calc(100% - var(--xl-padding));
     height: 4em;
     padding: var(--small-padding) var(--medium-padding);
+}
+.logo {
+    width: 130px;
+    height: 120px;
 }
 .header-right {
     display: flex;
@@ -57,8 +62,8 @@ ul {
     color: #fff;
     text-decoration: none;
 }
-.fa-bars {
-
+.fa-bars, .fa-magnifying-glass {
+    font-size: 2rem;
 }
 .active {
     display: block;
