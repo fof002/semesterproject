@@ -12,7 +12,7 @@ body {
     margin:0;
     padding: 0;
     width:100%;
-    font: ;
+    font-family: Platelet OT;
 }
 /*----Header-----*/
 header {
@@ -32,6 +32,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    width: 5em;
 }
 #web-search {
     display: none;
@@ -44,6 +45,7 @@ header {
     display: none;
     right: 1em;
     background: var(--main-color);
+    z-index: 10;
 }
 ul {
     padding-inline-start: 0;
@@ -71,10 +73,20 @@ ul {
 
 /* -----Main------ */
 main {
+    position: relative;
+    top: 4em;
     margin:0 auto;
-    width: min(1000px, calc(100vw - var(--large-padding)));
+    width: 100%;
+    z-index: -1;
 }
+
+
+.content--container {
+    display: grid;
+}
+
 /* ----index.html-----*/
+
 .about { grid-area: about;}
 .explore { grid-area: explore;}
 .kids--image { grid-area: kids-image;}
@@ -87,9 +99,7 @@ main {
 .special--events { grid-area: special-events;}
 .getinvolved--image { grid-area: getinvolved-image;}
 .getinvolved--text { grid-area: getinvolved-text;}
-.content--container {
-    display: grid;
-}
+
 .index {
     display: grid;
     grid-template-areas: 
@@ -107,6 +117,13 @@ main {
         "getinvolved-text";
 }
 
+.about {
+    text-align: center;
+    color: #fff;
+    background: var(--main-color);
+    height: 20em;
+    padding: var(--medium-padding);
+}
 
 
 
