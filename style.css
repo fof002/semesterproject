@@ -22,28 +22,39 @@ header {
     position: fixed;
     width: calc(100% - var(--xl-padding));
     height: 4em;
+    background: #fff;
     padding: var(--small-padding) var(--medium-padding);
 }
 .logo {
     width: 115px;
     height: 100px;
+    position: relative;
 }
 .header-right {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    position: relative;
+    left:0.5em;
     width: 5em;
 }
 #web-search {
     display: none;
 }
-#mobile-navigation {
+#search-input {
+    position: absolute;
+    width: 100vw;
+    display: none;
+    z-index: 10;
+}
+#mobile-navigation, #mobile-search {
     position: relative;
 }
 .menu {
     position: absolute;
     display: none;
-    right: 1em;
+    right: -0.2em;
+    top: 2.5em;
     background: #fff;
     z-index: 10;
     width: 10em;
@@ -51,7 +62,7 @@ header {
 }
 ul {
     padding-inline-start: 0;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
   }
 .menu li {
     list-style-type: none;
@@ -76,13 +87,13 @@ ul {
     font-size: 1.7rem;
 }
 .active {
-    display: block;
+    display: block !important;
 }
 
 /* -----Main------ */
 main {
     position: relative;
-    top: 4em;
+    top: 4.5em;
     margin:0 auto;
     width: 100%;
     z-index: -1;
@@ -124,15 +135,41 @@ main {
         "getinvolved-image"
         "getinvolved-text";
 }
-
-.about {
+.content {
     text-align: center;
-    color: #fff;
-    background: var(--main-color);
-    height: 20em;
     padding: var(--medium-padding);
 }
-
-
+.about {
+    color: #fff;
+    background: var(--main-color);
+    height: 16em;
+}
+.explore {
+    color: var(--main-color);
+    background: #fff;
+    height: 17em;
+}
+.kids--image {
+    background: url(../images/kids_image.jpg);
+    height: 17em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kids--text {
+    color: #fff;
+    background: var(--main-color);
+    height: 17em;
+}
+.teachers--image {
+    background: url(../images/teachers_image.jpg);
+    height: 17em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teachers--text {
+    color: var(--main-color);
+    background: #fff;
+    height: 17em;
+}
 
 /*-----Footer --------*/
