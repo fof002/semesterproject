@@ -24,6 +24,7 @@ header {
     height: 4em;
     background: #fff;
     padding: var(--small-padding) var(--medium-padding);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.048);
 }
 .logo {
     width: 115px;
