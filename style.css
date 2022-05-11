@@ -34,13 +34,10 @@ header {
 #mobile-navigation {
     position: relative;
 }
-#dropdown {
-    display: none;
-}
 .menu {
     position: absolute;
-    right: 0;
-    top: 0;
+    display: none;
+    right: 1em;
     background: var(--main-color);
 }
 ul {
@@ -60,11 +57,19 @@ ul {
     color: #fff;
     text-decoration: none;
 }
+.fa-bars {
+
+}
 .active {
     display: block;
 }
 
 /* -----Main------ */
+main {
+    margin:0 auto;
+    width: min(1000px, calc(100vw - var(--large-padding)));
+}
+/* ----index.html-----*/
 .about { grid-area: about;}
 .explore { grid-area: explore;}
 .kids--image { grid-area: kids-image;}
@@ -77,8 +82,10 @@ ul {
 .special--events { grid-area: special-events;}
 .getinvolved--image { grid-area: getinvolved-image;}
 .getinvolved--text { grid-area: getinvolved-text;}
-
-main {
+.content--container {
+    display: grid;
+}
+.index {
     display: grid;
     grid-template-areas: 
         "about"
@@ -93,8 +100,9 @@ main {
         "special-events"
         "getinvolved-image"
         "getinvolved-text";
-    margin:0 auto;
-    width: min(1000px, calc(100vw - var(--large-padding)));
 }
+
+
+
 
 /*-----Footer --------*/
