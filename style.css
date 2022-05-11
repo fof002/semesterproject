@@ -44,8 +44,10 @@ header {
     position: absolute;
     display: none;
     right: 1em;
-    background: var(--main-color);
+    background: #fff;
     z-index: 10;
+    width: 10em;
+    text-align: center;
 }
 ul {
     padding-inline-start: 0;
@@ -54,11 +56,14 @@ ul {
     list-style-type: none;
     padding: var(--small-padding) var(--large-padding);
 }
+.menu li a {
+    color: var(--main-color);
+}
 .menu li:hover {
-    background: #fff;
+    background: var(--main-color);
 }
 .menu li:hover a {
-    color: var(--main-color);
+    color: #fff;
 }
 .menu a {
     color: #fff;
