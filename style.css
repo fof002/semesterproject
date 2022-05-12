@@ -155,7 +155,26 @@ main {
     color: #fff;
     background: var(--main-color);
     height: 16em;
+    position: relative;
 }
+.about::before {
+    position: absolute;
+    content: "";
+    background: url(../images/about_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.3;
+    inset: 0;
+}
+.about h1 {
+    z-index: 1;
+    position: relative;
+} 
+.about .button--group {
+    z-index: 1;
+    position: relative;
+} 
 .explore {
     color: var(--main-color);
     background: #fff;
@@ -201,6 +220,5 @@ main {
 }
 .exhibitions--spaces ul {
     text-align: start;
-    margin: 0 auto;
 }
 /*-----Footer --------*/
