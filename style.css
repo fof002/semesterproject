@@ -7,12 +7,17 @@
     --large-padding: calc(var(--small-padding) * 3);
     --xl-padding: calc(var(--small-padding) * 4);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /*-------body------*/
 body {
     margin:0;
     padding: 0;
     width:100%;
     font-family: Platelet OT;
+    scrollbar-width: none;
+
 }
 @font-face {
     font-family: "Platelet OT";
@@ -60,16 +65,14 @@ header {
 .menu {
     position: absolute;
     display: none;
-    right: -0.2em;
-    top: 2.5em;
+    right: -0.35em;
+    top: 2em;
     background: #fff;
     z-index: 10;
-    width: 10em;
+    width: 13em;
     text-align: center;
 }
-.fa-solid {
-    color: var(--main-color);
-}
+
 ul {
     padding-inline-start: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
@@ -80,8 +83,9 @@ ul {
 }
 .menu li a {
     color: var(--main-color);
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
+
 }
 .menu li:hover {
     background: var(--main-color);
