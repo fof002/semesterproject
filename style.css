@@ -32,9 +32,9 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.048);
 }
 .logo {
-    width: 115px;
-    height: 100px;
     position: relative;
+    width: 115;
+    height: 51;
 }
 .header-right {
     display: flex;
@@ -65,6 +65,9 @@ header {
     z-index: 10;
     width: 10em;
     text-align: center;
+}
+.fa-solid {
+    color: var(--main-color);
 }
 ul {
     padding-inline-start: 0;
