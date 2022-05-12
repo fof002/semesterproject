@@ -33,8 +33,7 @@ header {
 }
 .logo {
     position: relative;
-    width: 115;
-    height: 51;
+    font-family: Platelet OT;
 }
 .header-right {
     display: flex;
