@@ -14,6 +14,11 @@ body {
     width:100%;
     font-family: Platelet OT;
 }
+@font-face {
+    font-family: "Platelet OT";
+    src: url("../fonts/Platelet Regular.ttf") format("truetype");
+  }
+  
 /*----Header-----*/
 header {
     display: flex;
