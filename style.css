@@ -71,12 +71,10 @@ header {
     z-index: 10;
     width: 13em;
     text-align: center;
-}
-
-ul {
     padding-inline-start: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
-  }
+}
+
 .menu li {
     list-style-type: none;
     padding: var(--small-padding) var(--large-padding);
@@ -185,5 +183,24 @@ main {
     background: #fff;
     height: 17em;
 }
-
+.researchers--image {
+    background: url(../images/researchers_image.jpg);
+    height: 17em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.researchers--text {
+    color: #fff;
+    background: var(--main-color);
+    height: 17em;
+}
+.exhibitions--spaces {
+    color: var(--main-color);
+    background: #fff;
+    height: 17em;
+}
+.exhibitions--spaces ul {
+    text-align: start;
+    margin: 0 auto;
+}
 /*-----Footer --------*/
