@@ -17,6 +17,9 @@ body {
     width:100%;
     font-family: "Platelet OT";
     scrollbar-width: none;
+}
+/*------Standard CTA button----*/
+.cta__button {
 
 }
 @font-face {
@@ -242,10 +245,24 @@ main {
     background: var(--main-color);
     height: 17em;
 }
+.getinvolved--text ul {
+    text-align: start; 
+}
 /*-----Footer --------*/
+footer {
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+footer h3 {
+    color: var(--main-color);
+}
 .logo--footer {
     position: relative;
     font-family: "Platelet OT";
-    top: 0.2em;
-    right:1em;
+    transform: scale(2);
+}
+.contact--container .fa-solid {
+    color: black;
 }
