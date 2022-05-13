@@ -172,7 +172,9 @@ main {
     text-align: center;
     padding: var(--medium-padding);
 }
-
+.content h2 {
+    margin-bottom: 0;
+  }
 .about {
     color: #fff;
     background: var(--main-color);
