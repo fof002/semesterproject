@@ -170,11 +170,15 @@ main {
     justify-content: start;
     gap: 1em;
     text-align: center;
+    font-size: 1.1rem;
     padding: var(--medium-padding);
 }
 .content h2 {
     margin-bottom: 0;
-  }
+}
+  .content ul {
+    text-align: start;
+}
 .about {
     color: #fff;
     background: var(--main-color);
@@ -203,7 +207,7 @@ main {
 .explore {
     color: var(--main-color);
     background: #fff;
-    height: 17em;
+    height: 15em;
 }
 .kids--image {
     background: url(../images/kids_image.jpg);
@@ -243,16 +247,10 @@ main {
     background: #fff;
     height: 18em;
 }
-.exhibitions--spaces ul {
-    text-align: start;
-}
 .special--events {
     color: #fff;
     background: var(--main-color);
-    height: 17em;
-}
-.special--events ul {
-    text-align: start; 
+    height: 14em;
 }
 .getinvolved--image {
     background: url(../images/involved_image.jpg);
@@ -263,11 +261,9 @@ main {
 .getinvolved--text {
     color: #fff;
     background: var(--main-color);
-    height: 15em;
+    height: 14em;
 }
-.getinvolved--text ul {
-    text-align: start; 
-}
+
 /*-----Footer --------*/
 footer {
     display: flex;
