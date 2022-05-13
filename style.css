@@ -229,7 +229,7 @@ main {
 .teachers--text {
     color: var(--main-color);
     background: #fff;
-    height:20em;
+    height:19em;
 }
 .researchers--image {
     background: url(../images/researchers_image.jpg);
@@ -245,12 +245,12 @@ main {
 .exhibitions--spaces {
     color: var(--main-color);
     background: #fff;
-    height: 18em;
+    height: 17em;
 }
 .special--events {
     color: #fff;
     background: var(--main-color);
-    height: 14em;
+    height: 14.5em;
 }
 .getinvolved--image {
     background: url(../images/involved_image.jpg);
@@ -261,7 +261,7 @@ main {
 .getinvolved--text {
     color: #fff;
     background: var(--main-color);
-    height: 14em;
+    height: 14.5em;
 }
 
 /*-----Footer --------*/
