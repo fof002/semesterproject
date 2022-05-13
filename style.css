@@ -19,11 +19,16 @@ body {
     scrollbar-width: none;
 }
 /*------Standard CTA button----*/
+.button--group {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+  }
 .cta__button {
     background: black;
     color: #fff;
     text-decoration: none;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.7em;
     font-size: 1.3rem;
     border-radius: 20px;
 }
@@ -160,6 +165,10 @@ main {
         "getinvolved-text";
 }
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1em;
     text-align: center;
     padding: var(--medium-padding);
 }
@@ -203,7 +212,7 @@ main {
 .kids--text {
     color: #fff;
     background: var(--main-color);
-    height: 17em;
+    height: 18em;
 }
 .teachers--image {
     background: url(../images/teachers_image.jpg);
@@ -214,7 +223,7 @@ main {
 .teachers--text {
     color: var(--main-color);
     background: #fff;
-    height: 17em;
+    height:20em;
 }
 .researchers--image {
     background: url(../images/researchers_image.jpg);
@@ -225,12 +234,12 @@ main {
 .researchers--text {
     color: #fff;
     background: var(--main-color);
-    height: 17em;
+    height: 19em;
 }
 .exhibitions--spaces {
     color: var(--main-color);
     background: #fff;
-    height: 17em;
+    height: 18em;
 }
 .exhibitions--spaces ul {
     text-align: start;
@@ -252,17 +261,23 @@ main {
 .getinvolved--text {
     color: #fff;
     background: var(--main-color);
-    height: 17em;
+    height: 15em;
 }
 .getinvolved--text ul {
     text-align: start; 
 }
 /*-----Footer --------*/
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+    position: relative;
+    top: 8em;
+    height: 36em;
 }
 footer h3 {
     color: var(--main-color);
