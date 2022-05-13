@@ -31,10 +31,20 @@ body {
     padding: 0.5em 0.7em;
     font-size: 1.3rem;
     border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.507);
+}
+.cta__button:hover {
+    background: #fff;
+    color: black;
 }
 .main__color {
     background: var(--main-color);
+    border: 2px solid var(--main-color);
     color:#fff;
+}
+.main__color:hover {
+    background: #fff;
+    color:var(--main-color);
 }
 @font-face {
     font-family: "Platelet OT";
@@ -245,7 +255,7 @@ main {
 .exhibitions--spaces {
     color: var(--main-color);
     background: #fff;
-    height: 17em;
+    height: 16.5em;
 }
 .special--events {
     color: #fff;
