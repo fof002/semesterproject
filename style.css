@@ -273,7 +273,17 @@ main {
     background: var(--main-color);
     height: 14.5em;
 }
-
+/*-------about.html-------*/
+.about-image {
+    background: url(../images/museum_image.jpg);
+    /*background-repeat: no-repeat;*/
+    background-size: contain;
+    height: 20em;
+}
+.text-section {
+    margin: 0 auto;
+    width: min(1000px, calc(100% - var(--xl-padding)));
+  }
 /*-----Footer --------*/
 footer {
     display: flex;
