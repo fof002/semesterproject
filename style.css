@@ -103,7 +103,11 @@ header {
     border-radius: 8px;
     padding: var(--small-padding);
 }
-#web-navigation a:hover, .active-link {
+#web-navigation a:hover {
+    color: #fff;
+    background: var(--main-color);
+}
+.active {
     color: #fff;
     background: var(--main-color);
 }
@@ -324,7 +328,7 @@ main {
     height: 17em;
 }
 /* -----exhibitions.html ----*/
-.involved__image {
+.exhibition__image {
     background: url(../images/exhibition_image.jpg);
     /*background-repeat: no-repeat;*/
     background-size: contain;
@@ -436,7 +440,6 @@ footer h3 {
             "researchers-text researchers-text researchers-text"
             "exhibitions-spaces exhibitions-spaces exhibitions-spaces"
             "special-events special-events special-events"
-            "getinvolved-image getinvolved-image getinvolved-image"
             "getinvolved-text getinvolved-text getinvolved-text"
             ;
     }
@@ -452,6 +455,13 @@ footer h3 {
     }
     .about {
         height: 30em;
+    }
+    .getinvolved--text {
+        color: var(--main-color);
+        background: #fff;
+    }
+    .getinvolved--image {
+        display: none;
     }
     footer {
         flex-direction: row;
