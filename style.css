@@ -92,6 +92,21 @@ header {
     display: none;
     z-index: 10;
 }
+#web-navigation {
+    display: none;
+}
+#web-navigation a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: var(--small-padding);
+}
+#web-navigation a:hover, .active-link {
+    color: #fff;
+    background: var(--main-color);
+}
 #mobile-navigation, #mobile-search {
     position: relative;
 }
@@ -130,6 +145,7 @@ header {
 }
 .fa-bars, .fa-magnifying-glass {
     font-size: 1.7rem;
+    color: var(--main-color);
 }
 .active {
     display: block !important;
@@ -404,20 +420,38 @@ footer h3 {
 }
 /* ------Media quereries -----*/
 @media only screen and (min-width: 1000px) {
-    /*.index {
+    #mobile-navigation {
+        display: none;
+    }
+    #web-navigation {
+        display: block;
+    }
+    .index {
         display: grid;
         grid-template-areas: 
-            "explore explore"  
-            "kids-image kids-text" 
-            "teachers-text teachers-image"
-            "researchers-image researchers-text"
-            "special-events exhibitions-spaces"
-            "getinvolved-image getinvolved-text"
+            "explore explore explore"  
+            "kids-image teachers-image researchers-image" 
+            "kids-text kids-text kids-text"
+            "teachers-text teachers-text teachers-text"
+            "researchers-text researchers-text researchers-text"
+            "exhibitions-spaces exhibitions-spaces exhibitions-spaces"
+            "special-events special-events special-events"
+            "getinvolved-image getinvolved-image getinvolved-image"
+            "getinvolved-text getinvolved-text getinvolved-text"
             ;
-    }*/
+    }
+    .content {
+        font-size: 1.3rem;
+    }
+    .content ul {
+        text-align: center;
+    }
     .content--container {
-        max-width: 1000px;
+        max-width: 800px;
         margin: 0 auto;
+    }
+    .about {
+        height: 30em;
     }
     footer {
         flex-direction: row;
