@@ -81,10 +81,10 @@ header {
     gap: 1em;
     position: relative;
     left:0.5em;
-    width: 5em;
 }
 #web-search {
     display: none;
+    align-items: center;
 }
 #search-input {
     position: absolute;
@@ -94,6 +94,8 @@ header {
 }
 #web-navigation {
     display: none;
+    flex-direction: row;
+    gap:0.2em;
 }
 #web-navigation a {
     color: var(--main-color);
@@ -103,14 +105,11 @@ header {
     border-radius: 8px;
     padding: var(--small-padding);
 }
-#web-navigation a:hover {
-    color: #fff;
+#web-navigation a:hover, .active {
+    color: #fff !important;
     background: var(--main-color);
 }
-.active {
-    color: #fff;
-    background: var(--main-color);
-}
+
 #mobile-navigation, #mobile-search {
     position: relative;
 }
@@ -162,7 +161,6 @@ main {
     margin:0 auto;
     width: 100%;
 }
-
 
 .content--container {
     display: grid;
@@ -250,7 +248,7 @@ main {
 }
 .kids--image {
     background: url(../images/kids_image.jpg);
-    height: 17em;
+    height: 21em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -261,7 +259,7 @@ main {
 }
 .teachers--image {
     background: url(../images/teachers_image.jpg);
-    height: 17em;
+    height: 21em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -272,7 +270,7 @@ main {
 }
 .researchers--image {
     background: url(../images/researchers_image.jpg);
-    height: 17em;
+    height: 21em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -293,7 +291,7 @@ main {
 }
 .getinvolved--image {
     background: url(../images/involved_image.jpg);
-    height: 17em;
+    height: 21em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -330,8 +328,8 @@ main {
 /* -----exhibitions.html ----*/
 .exhibition__image {
     background: url(../images/exhibition_image.jpg);
-    /*background-repeat: no-repeat;*/
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 17em;
 }
 /* -----events.html ----*/
@@ -424,11 +422,14 @@ footer h3 {
 }
 /* ------Media quereries -----*/
 @media only screen and (min-width: 1000px) {
-    #mobile-navigation {
+    #mobile-navigation, #mobile-search {
         display: none;
     }
+    #web-search {
+        display: flex;
+    }
     #web-navigation {
-        display: block;
+        display: flex;
     }
     .index {
         display: grid;
@@ -452,6 +453,7 @@ footer h3 {
     .content--container {
         max-width: 800px;
         margin: 0 auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.13);
     }
     .about {
         height: 30em;
@@ -462,6 +464,9 @@ footer h3 {
     }
     .getinvolved--image {
         display: none;
+    }
+    .kids--image, .teachers--image, .researchers--image {
+        height: 17em;
     }
     footer {
         flex-direction: row;
