@@ -86,6 +86,20 @@ header {
     display: none;
     align-items: center;
 }
+#web-search input {
+    box-shadow: 0px 8px 16px 0px rgba(16, 34, 36, 0.24);
+    height: 2em;
+    width: 20em;
+    border: none;
+    border-radius: 5px;
+}
+#web-search input:focus {
+    box-shadow: 0px 8px 16px 0px rgb(2, 61, 22);
+}
+#search-icon {
+    position: relative;
+    top: 0.4em;
+  }
 #search-input {
     position: absolute;
     width: 100vw;
@@ -300,52 +314,22 @@ main {
     background: var(--main-color);
     height: 14.5em;
 }
-/*-------about.html-------*/
-.about__image {
-    background: url(../images/museum_image.jpg);
-    /*background-repeat: no-repeat;*/
-    background-size: contain;
-    height: 20em;
+/*-------.html pages-------*/
+.top__section {
+    background: var(--main-color);
+    height: 5em;
 }
 .text__section {
     margin: 0 auto;
     width: min(800px, calc(100% - var(--xl-padding)));
     color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
     padding: 0 0 var(--xl-padding) 0;
   }
   .text__section h1 {
     border-bottom: 1px solid var(--main-color);
     padding: 0 0 0.5em 0;
   }
-/* -----involved.html ----*/
-.involved__image {
-    background: url(../images/involved_image.jpg);
-    /*background-repeat: no-repeat;*/
-    background-size: contain;
-    height: 17em;
-}
-/* -----exhibitions.html ----*/
-.exhibition__image {
-    background: url(../images/exhibition_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 17em;
-}
-/* -----events.html ----*/
-.events__image {
-    background: url(../images/events_image.jpg);
-    /*background-repeat: no-repeat;*/
-    background-size: contain;
-    height: 17em;
-}
-/* -----contact.html ----*/
-.contact__image {
-    background: url(../images/contact_image.jpg);
-    /*background-repeat: no-repeat;*/
-    background-size: contain;
-    height: 17em;
-}
+
 .contact__form {
     display: flex;
     flex-direction: column;
@@ -396,11 +380,12 @@ footer {
     background: #fff;
     margin: 0 auto;
     padding-bottom: 2em;
-    width: 100%;
+    max-width: 55em;
     text-align: center;
     position: relative;
     top: 8em;
     height: 36em;
+    border-top: 2px solid var(--main-color);
 }
 footer h3 {
     color: var(--main-color);
@@ -421,7 +406,7 @@ footer h3 {
     font-size: 2rem;
 }
 /* ------Media quereries -----*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1180px) {
     #mobile-navigation, #mobile-search {
         display: none;
     }
@@ -431,6 +416,8 @@ footer h3 {
     #web-navigation {
         display: flex;
     }
+}
+@media only screen and (min-width: 1000px) {
     .index {
         display: grid;
         grid-template-areas: 
@@ -453,10 +440,9 @@ footer h3 {
     .content--container {
         max-width: 800px;
         margin: 0 auto;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.13);
     }
     .about {
-        height: 30em;
+        height: 40em;
     }
     .getinvolved--text {
         color: var(--main-color);
