@@ -6,26 +6,19 @@ A semester project for a made up science museum created with CSS and HTML.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+I was tasked with creating a website for a made up community science museum with CSS and HTML. The following were requirements: 
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- Create a prototype in Adobe XD
+- Code the prototype
+- Use Netlify to launch the website from the Github repo
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+CSS and HTML.
 
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
