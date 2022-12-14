@@ -1,8 +1,8 @@
-# Your project title
+# Semester project
 
 ![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-A simple overview of the use/purpose of the project.
+A semester project for a made up science museum created with CSS and HTML.
 
 ## Description
 
