@@ -27,14 +27,6 @@ CSS and HTML.
 git clone git@github.com:https://github.com/fof002/semesterproject.git
 ```
 
-### Running
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
 ## Contributing
 
 If you would like to contribute to this project, please open a pull request so your code can be reviewed.
